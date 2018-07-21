@@ -4,6 +4,7 @@ body {
   background-color: red;
   max-width: 1270px; }
   body .all-content h1 {
-    text-align: center; }
+    text-align: center;
+    color: yellow; }
 
 /*# sourceMappingURL=style.css.map */
