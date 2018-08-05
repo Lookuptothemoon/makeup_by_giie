@@ -1,12 +1,77 @@
+@font-face {
+	font-family: "logo-font";
+	src: url(fonts/humble_2/Humble.ttf);
+}
+
 body {
-    margin: 0 auto;
     //max-width: 1200px;
     //max-width: 1270px;
+    background-color: rgba(240, 240, 240, 1);
+    margin: 0 auto;
 
     .all-content {
-    	h1{
-    		text-align: left;
-    		margin-left: 25px;
+    	//max-width: 2500px;
+    	//min-height: 1000px;
+    	background-color: ghostwhite;
+
+    	.scroll-wrapper{
+    		.side-nav{
+    			background-color: rgba(248, 248, 250, 0.8);
+    			text-align: center;
+    			position: fixed;
+    			z-index: 1;
+    			height: 100%;
+    			width: 350px;
+    			margin-left: 25px;
+    			.logo{
+    				font-family: logo-font;
+    				font-size: 30px;
+    				margin-top: 150px;
+    			}
+    			ul{
+    				list-style-type: none;
+    				li{
+    					padding-top: 10px;
+    					padding-bottom: 10px;
+    					margin-right: 50px;
+    					.icon{
+    						width: 30px;
+    						height: 30px;
+    						padding-top: 50px;
+    						padding-left: 5px;
+    						padding-right: 5px;
+    					}
+    					a{
+    						color: black;
+    						font-size: 20px;
+    						font-family: Helvetica;
+    						text-decoration: none;
+    					}
+    					a:hover{
+    						color: red;
+    					}
+    				}
+    			}
+    		}
+    		.scroll-img-wrapper{
+    			display: flex;
+    			flex-wrap: nowrap;
+    			overflow-x: auto;
+    			height: 510px;
+    			position: absolute;
+    			margin: auto;
+				top: 0;
+				bottom: 0;
+				padding-left: 370px;
+	    		.scroll-item{
+	    			flex: none;
+	    			img{
+	    				padding: 0 15px 0 15px;
+	    				max-height: 500px;
+	    				max-width: 500px;
+	    			}
+	    		}
+	    	}
     	}
     }
 

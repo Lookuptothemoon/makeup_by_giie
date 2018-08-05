@@ -1,7 +1,57 @@
+@font-face {
+  font-family: "logo-font";
+  src: url(fonts/humble_2/Humble.ttf); }
 body {
+  background-color: #f0f0f0;
   margin: 0 auto; }
-  body .all-content h1 {
-    text-align: left;
-    margin-left: 25px; }
+  body .all-content {
+    background-color: ghostwhite; }
+    body .all-content .scroll-wrapper .side-nav {
+      background-color: rgba(248, 248, 250, 0.8);
+      text-align: center;
+      position: fixed;
+      z-index: 1;
+      height: 100%;
+      width: 350px;
+      margin-left: 25px; }
+      body .all-content .scroll-wrapper .side-nav .logo {
+        font-family: logo-font;
+        font-size: 30px;
+        margin-top: 150px; }
+      body .all-content .scroll-wrapper .side-nav ul {
+        list-style-type: none; }
+        body .all-content .scroll-wrapper .side-nav ul li {
+          padding-top: 10px;
+          padding-bottom: 10px;
+          margin-right: 50px; }
+          body .all-content .scroll-wrapper .side-nav ul li .icon {
+            width: 30px;
+            height: 30px;
+            padding-top: 50px;
+            padding-left: 5px;
+            padding-right: 5px; }
+          body .all-content .scroll-wrapper .side-nav ul li a {
+            color: black;
+            font-size: 20px;
+            font-family: Helvetica;
+            text-decoration: none; }
+          body .all-content .scroll-wrapper .side-nav ul li a:hover {
+            color: red; }
+    body .all-content .scroll-wrapper .scroll-img-wrapper {
+      display: flex;
+      flex-wrap: nowrap;
+      overflow-x: auto;
+      height: 510px;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      bottom: 0;
+      padding-left: 370px; }
+      body .all-content .scroll-wrapper .scroll-img-wrapper .scroll-item {
+        flex: none; }
+        body .all-content .scroll-wrapper .scroll-img-wrapper .scroll-item img {
+          padding: 0 15px 0 15px;
+          max-height: 500px;
+          max-width: 500px; }
 
 /*# sourceMappingURL=style.css.map */
